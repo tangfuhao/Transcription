@@ -1,0 +1,9 @@
+# Android Release 簽名配置
+# 複製此文件為 key.properties 並填入你的簽名信息
+# 注意：key.properties 已被 .gitignore 忽略，不會提交到版本控制
+
+storePassword=你的keystore密碼
+keyPassword=你的key密碼
+keyAlias=你的key別名
+storeFile=/path/to/your/keystore.jks
+
