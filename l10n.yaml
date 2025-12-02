@@ -1,0 +1,10 @@
+# Flutter 國際化配置文件
+# 詳細文檔: https://docs.flutter.dev/ui/accessibility-and-localization/internationalization
+
+arb-dir: lib/l10n
+template-arb-file: app_zh.arb
+output-localization-file: app_localizations.dart
+output-class: AppLocalizations
+output-dir: lib/l10n/generated
+nullable-getter: false
+

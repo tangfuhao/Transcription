@@ -1,0 +1,91 @@
+name: macaron_transcription
+description: Macaron - AI Transcription. Real-time speech transcription with speaker identification.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # 國際化
+  flutter_localizations:
+    sdk: flutter
+  
+  # UI
+  cupertino_icons: ^1.0.6
+  
+  # 狀態管理
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+  
+  # 路由
+  go_router: ^13.0.0
+  
+  # 數據庫
+  drift: ^2.14.1
+  sqlite3_flutter_libs: ^0.5.18
+  path_provider: ^2.1.1
+  path: ^1.8.3
+  
+  # 網絡
+  web_socket_channel: ^2.4.0
+  http: ^1.1.0
+  
+  # 安全存儲
+  flutter_secure_storage: ^9.0.0
+  
+  # 權限
+  permission_handler: ^11.1.0
+  
+  # 工具
+  uuid: ^4.2.1
+  intl: ^0.20.2
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.8.1
+  equatable: ^2.0.5
+  just_audio: ^0.10.5
+  audio_session: ^0.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  # App Icon 生成
+  flutter_launcher_icons: ^0.14.2
+  
+  # 代碼生成
+  build_runner: ^2.4.7
+  drift_dev: ^2.14.1
+  freezed: ^2.4.6
+  json_serializable: ^6.7.1
+  riverpod_generator: ^2.3.9
+  
+  # Lint
+  flutter_lints: ^3.0.1
+  
+  # 測試
+  mocktail: ^1.0.1
+
+flutter:
+  uses-material-design: true
+  generate: true  # 啟用國際化代碼生成
+  
+  assets:
+    - assets/images/
+
+# App Icon 配置
+flutter_launcher_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path: "assets/images/app_icon.png"
+  min_sdk_android: 21
+  # iOS 特定配置
+  remove_alpha_ios: true
+  # Android 自適應圖標（可選，但推薦）
+  adaptive_icon_background: "#9B59B6"
+  adaptive_icon_foreground: "assets/images/app_icon.png"

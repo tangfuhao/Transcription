@@ -1,0 +1,480 @@
+{
+  "@@locale": "zh",
+  
+  "appTitle": "Macaron - AI 转录",
+  "@appTitle": {
+    "description": "应用标题"
+  },
+  
+  "appName": "Macaron",
+  "@appName": {
+    "description": "应用名称"
+  },
+  
+  "startTranscription": "开始转录",
+  "@startTranscription": {
+    "description": "开始转录按钮"
+  },
+  
+  "searchTranscriptions": "搜索转录记录...",
+  "@searchTranscriptions": {
+    "description": "搜索框提示文字"
+  },
+  
+  "loadFailed": "加载失败: {error}",
+  "@loadFailed": {
+    "description": "加载失败错误信息",
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "网络错误"
+      }
+    }
+  },
+  
+  "noTranscriptions": "还没有转录记录",
+  "@noTranscriptions": {
+    "description": "空状态标题"
+  },
+  
+  "tapToStartTranscription": "点击下方按钮开始转录",
+  "@tapToStartTranscription": {
+    "description": "空状态提示"
+  },
+  
+  "selectTranscriptionLanguage": "选择转录语言",
+  "@selectTranscriptionLanguage": {
+    "description": "语言选择器标题"
+  },
+  
+  "supportedLanguagesCount": "支持 {count} 种语言",
+  "@supportedLanguagesCount": {
+    "description": "支持的语言数量",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "50"
+      }
+    }
+  },
+  
+  "searchLanguage": "搜索语言...",
+  "@searchLanguage": {
+    "description": "搜索语言提示文字"
+  },
+  
+  "multiLanguageSupportInfo": "仅支持: English, Spanish, French, German, Hindi, Russian, Portuguese, Japanese, Italian, Dutch",
+  "@multiLanguageSupportInfo": {
+    "description": "多语言自动检测支持的语言列表"
+  },
+  
+  "settings": "设置",
+  "@settings": {
+    "description": "设置页标题"
+  },
+  
+  "transcriptionSettings": "转录设置",
+  "@transcriptionSettings": {
+    "description": "转录设置分区标题"
+  },
+  
+  "defaultLanguage": "默认语言",
+  "@defaultLanguage": {
+    "description": "默认语言设置项"
+  },
+  
+  "noDefaultLanguage": "不设置默认值（每次选择）",
+  "@noDefaultLanguage": {
+    "description": "不设置默认语言选项"
+  },
+  
+  "loading": "加载中...",
+  "@loading": {
+    "description": "加载中状态"
+  },
+  
+  "loadFailedSimple": "加载失败",
+  "@loadFailedSimple": {
+    "description": "简单的加载失败提示"
+  },
+  
+  "about": "关于",
+  "@about": {
+    "description": "关于分区标题"
+  },
+  
+  "version": "版本",
+  "@version": {
+    "description": "版本信息"
+  },
+  
+  "privacyPolicy": "隐私政策",
+  "@privacyPolicy": {
+    "description": "隐私政策链接"
+  },
+  
+  "termsOfService": "服务条款",
+  "@termsOfService": {
+    "description": "服务条款链接"
+  },
+  
+  "defaultTranscriptionLanguage": "默认转录语言",
+  "@defaultTranscriptionLanguage": {
+    "description": "默认转录语言设置标题"
+  },
+  
+  "autoUseAfterSetting": "设置后每次开始转录将自动使用",
+  "@autoUseAfterSetting": {
+    "description": "默认语言设置说明"
+  },
+  
+  "noDefaultValue": "不设置默认值",
+  "@noDefaultValue": {
+    "description": "不设置默认值选项标题"
+  },
+  
+  "selectLanguageEachTime": "每次开始转录时选择语言",
+  "@selectLanguageEachTime": {
+    "description": "不设置默认值选项说明"
+  },
+  
+  "startRecordingFailed": "启动录音失败: {error}",
+  "@startRecordingFailed": {
+    "description": "启动录音失败错误信息",
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "权限被拒绝"
+      }
+    }
+  },
+  
+  "saved": "已保存",
+  "@saved": {
+    "description": "保存成功提示"
+  },
+  
+  "recording": "正在录音",
+  "@recording": {
+    "description": "录音中对话框标题"
+  },
+  
+  "recordingInProgressMessage": "录音进行中，要如何处理？",
+  "@recordingInProgressMessage": {
+    "description": "录音中对话框内容"
+  },
+  
+  "cancel": "取消",
+  "@cancel": {
+    "description": "取消按钮"
+  },
+  
+  "stopRecording": "停止录音",
+  "@stopRecording": {
+    "description": "停止录音按钮"
+  },
+  
+  "unsavedContent": "未保存的内容",
+  "@unsavedContent": {
+    "description": "未保存内容对话框标题"
+  },
+  
+  "unsavedContentMessage": "有未保存的转录内容，要保存吗？",
+  "@unsavedContentMessage": {
+    "description": "未保存内容对话框内容"
+  },
+  
+  "discard": "放弃",
+  "@discard": {
+    "description": "放弃按钮"
+  },
+  
+  "save": "保存",
+  "@save": {
+    "description": "保存按钮"
+  },
+  
+  "preparing": "准备中",
+  "@preparing": {
+    "description": "准备中状态"
+  },
+  
+  "connecting": "连接中...",
+  "@connecting": {
+    "description": "连接中状态"
+  },
+  
+  "realTimeTranscription": "实时转录",
+  "@realTimeTranscription": {
+    "description": "实时转录状态"
+  },
+  
+  "stopping": "停止中...",
+  "@stopping": {
+    "description": "停止中状态"
+  },
+  
+  "transcriptionComplete": "转录完成",
+  "@transcriptionComplete": {
+    "description": "转录完成状态"
+  },
+  
+  "errorOccurred": "发生错误",
+  "@errorOccurred": {
+    "description": "发生错误状态"
+  },
+  
+  "recordingStatus": "录音中",
+  "@recordingStatus": {
+    "description": "录音中状态指示"
+  },
+  
+  "stopped": "已停止",
+  "@stopped": {
+    "description": "已停止状态"
+  },
+  
+  "titleOptional": "标题（可选）",
+  "@titleOptional": {
+    "description": "标题输入框标签"
+  },
+  
+  "enterTranscriptionTitle": "输入转录标题",
+  "@enterTranscriptionTitle": {
+    "description": "标题输入框提示"
+  },
+  
+  "continueRecording": "继续",
+  "@continueRecording": {
+    "description": "继续录音按钮"
+  },
+  
+  "retry": "重试",
+  "@retry": {
+    "description": "重试按钮"
+  },
+  
+  "renameSpeaker": "重命名 Speaker {label}",
+  "@renameSpeaker": {
+    "description": "重命名说话人对话框标题",
+    "placeholders": {
+      "label": {
+        "type": "String",
+        "example": "A"
+      }
+    }
+  },
+  
+  "name": "名称",
+  "@name": {
+    "description": "名称输入框标签"
+  },
+  
+  "enterSpeakerName": "输入说话人名称",
+  "@enterSpeakerName": {
+    "description": "说话人名称输入框提示"
+  },
+  
+  "confirm": "确定",
+  "@confirm": {
+    "description": "确定按钮"
+  },
+  
+  "confirmDelete": "确认删除",
+  "@confirmDelete": {
+    "description": "确认删除对话框标题"
+  },
+  
+  "confirmDeleteMessage": "确定要删除这个转录记录吗？此操作无法恢复。",
+  "@confirmDeleteMessage": {
+    "description": "确认删除对话框内容"
+  },
+  
+  "delete": "删除",
+  "@delete": {
+    "description": "删除按钮"
+  },
+  
+  "speakerLabel": "Speaker {label}",
+  "@speakerLabel": {
+    "description": "说话人标签",
+    "placeholders": {
+      "label": {
+        "type": "String",
+        "example": "A"
+      }
+    }
+  },
+  
+  "transcriptionDetail": "转录详情",
+  "@transcriptionDetail": {
+    "description": "转录详情页标题"
+  },
+  
+  "error": "错误",
+  "@error": {
+    "description": "错误状态"
+  },
+  
+  "transcriptionNotFound": "找不到转录记录",
+  "@transcriptionNotFound": {
+    "description": "找不到转录记录提示"
+  },
+  
+  "noTranscriptionContent": "没有转录内容",
+  "@noTranscriptionContent": {
+    "description": "没有转录内容提示"
+  },
+  
+  "pause": "暂停",
+  "@pause": {
+    "description": "暂停按钮提示"
+  },
+  
+  "playThisSegment": "播放此段",
+  "@playThisSegment": {
+    "description": "播放此段按钮提示"
+  },
+  
+  "stop": "停止",
+  "@stop": {
+    "description": "停止按钮提示"
+  },
+  
+  "play": "播放",
+  "@play": {
+    "description": "播放按钮提示"
+  },
+  
+  "enterKeywordToSearch": "输入关键字搜索转录内容",
+  "@enterKeywordToSearch": {
+    "description": "搜索空状态提示"
+  },
+  
+  "tapEmptyToExit": "点击空白处退出搜索",
+  "@tapEmptyToExit": {
+    "description": "退出搜索提示"
+  },
+  
+  "searchError": "搜索出错",
+  "@searchError": {
+    "description": "搜索出错提示"
+  },
+  
+  "notFound": "找不到「{query}」",
+  "@notFound": {
+    "description": "搜索无结果提示",
+    "placeholders": {
+      "query": {
+        "type": "String",
+        "example": "会议"
+      }
+    }
+  },
+  
+  "tryOtherKeywords": "尝试其他关键字",
+  "@tryOtherKeywords": {
+    "description": "尝试其他关键字提示"
+  },
+  
+  "foundResults": "找到 {count} 个结果",
+  "@foundResults": {
+    "description": "搜索结果数量",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "10"
+      }
+    }
+  },
+  
+  "unnamedTranscription": "未命名转录",
+  "@unnamedTranscription": {
+    "description": "未命名的转录记录"
+  },
+  
+  "durationMinutesSeconds": "{minutes} 分 {seconds} 秒",
+  "@durationMinutesSeconds": {
+    "description": "时长格式（分秒）",
+    "placeholders": {
+      "minutes": {
+        "type": "int",
+        "example": "5"
+      },
+      "seconds": {
+        "type": "int",
+        "example": "30"
+      }
+    }
+  },
+  
+  "durationSeconds": "{seconds} 秒",
+  "@durationSeconds": {
+    "description": "时长格式（仅秒）",
+    "placeholders": {
+      "seconds": {
+        "type": "int",
+        "example": "30"
+      }
+    }
+  },
+  
+  "speakerCount": "{count} 人",
+  "@speakerCount": {
+    "description": "说话人数量",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "3"
+      }
+    }
+  },
+  
+  "errorPleaseRetry": "发生错误，请重试",
+  "@errorPleaseRetry": {
+    "description": "错误重试提示"
+  },
+  
+  "startSpeaking": "开始说话...",
+  "@startSpeaking": {
+    "description": "开始说话提示"
+  },
+  
+  "ready": "准备就绪",
+  "@ready": {
+    "description": "准备就绪状态"
+  },
+  
+  "typing": "正在输入...",
+  "@typing": {
+    "description": "正在输入指示器"
+  },
+  
+  "audioFileNotFound": "音频文件不存在: {path}",
+  "@audioFileNotFound": {
+    "description": "音频文件不存在错误",
+    "placeholders": {
+      "path": {
+        "type": "String",
+        "example": "/path/to/file"
+      }
+    }
+  },
+  
+  "loadAudioFailed": "加载音频失败: {error}",
+  "@loadAudioFailed": {
+    "description": "加载音频失败错误",
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "文件损坏"
+      }
+    }
+  },
+  
+  "noAudioLoaded": "没有加载音频文件",
+  "@noAudioLoaded": {
+    "description": "没有加载音频文件错误"
+  }
+}
+
