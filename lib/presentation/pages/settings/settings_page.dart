@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../../core/constants.dart';
@@ -15,6 +16,21 @@ class SettingsPage extends ConsumerStatefulWidget {
 }
 
 class _SettingsPageState extends ConsumerState<SettingsPage> {
+  String _version = '';
+
+  @override
+  void initState() {
+    super.initState();
+    _loadVersion();
+  }
+
+  Future<void> _loadVersion() async {
+    final packageInfo = await PackageInfo.fromPlatform();
+    setState(() {
+      _version = packageInfo.version;
+    });
+  }
+
   void _showDefaultLanguageDialog() {
     showModalBottomSheet(
       context: context,
@@ -34,7 +50,8 @@ class _SettingsPageState extends ConsumerState<SettingsPage> {
   }
 
   Future<void> _openPrivacyPolicy() async {
-    final uri = Uri.parse('https://macaron-transcription-web.vercel.app/privacy');
+    final uri =
+        Uri.parse('https://macaron-transcription-web.vercel.app/privacy');
     if (await canLaunchUrl(uri)) {
       await launchUrl(uri, mode: LaunchMode.externalApplication);
     }
@@ -77,7 +94,7 @@ class _SettingsPageState extends ConsumerState<SettingsPage> {
           ListTile(
             leading: const Icon(Icons.info_outline),
             title: Text(l10n.version),
-            subtitle: const Text('1.0.0'),
+            subtitle: Text(_version.isEmpty ? '...' : _version),
           ),
           ListTile(
             leading: const Icon(Icons.description_outlined),

@@ -3,7 +3,7 @@ description: Macaron - AI Transcription. Real-time speech transcription with spe
 
 publish_to: 'none'
 
-version: 1.0.0+1
+version: 1.0.6+6
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
@@ -44,6 +44,9 @@ dependencies:
   
   # 打開外部鏈接
   url_launcher: ^6.2.1
+  
+  # 獲取應用信息
+  package_info_plus: ^8.0.0
   
   # 工具
   uuid: ^4.2.1
