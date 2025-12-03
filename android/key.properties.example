@@ -7,3 +7,4 @@ keyPassword=你的key密碼
 keyAlias=你的key別名
 storeFile=/path/to/your/keystore.jks
 
+

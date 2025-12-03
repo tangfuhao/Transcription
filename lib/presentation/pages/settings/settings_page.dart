@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../../core/constants.dart';
 import '../../../l10n/generated/app_localizations.dart';
@@ -30,6 +31,13 @@ class _SettingsPageState extends ConsumerState<SettingsPage> {
         },
       ),
     );
+  }
+
+  Future<void> _openPrivacyPolicy() async {
+    final uri = Uri.parse('https://macaron-transcription-web.vercel.app/privacy');
+    if (await canLaunchUrl(uri)) {
+      await launchUrl(uri, mode: LaunchMode.externalApplication);
+    }
   }
 
   @override
@@ -75,17 +83,7 @@ class _SettingsPageState extends ConsumerState<SettingsPage> {
             leading: const Icon(Icons.description_outlined),
             title: Text(l10n.privacyPolicy),
             trailing: const Icon(Icons.open_in_new, size: 18),
-            onTap: () {
-              // TODO: 打開隱私政策
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.gavel_outlined),
-            title: Text(l10n.termsOfService),
-            trailing: const Icon(Icons.open_in_new, size: 18),
-            onTap: () {
-              // TODO: 打開服務條款
-            },
+            onTap: _openPrivacyPolicy,
           ),
         ],
       ),

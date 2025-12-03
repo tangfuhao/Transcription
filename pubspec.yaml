@@ -42,6 +42,9 @@ dependencies:
   # 權限
   permission_handler: ^11.1.0
   
+  # 打開外部鏈接
+  url_launcher: ^6.2.1
+  
   # 工具
   uuid: ^4.2.1
   intl: ^0.20.2
